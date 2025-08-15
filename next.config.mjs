@@ -33,9 +33,11 @@ const nextConfig = {
   reactStrictMode: true,
   // Ensure static exports work with Vercel
   trailingSlash: false,
-  // Enable server components
+  // Enable experimental features
   experimental: {
-    serverActions: true,
+    serverActions: {
+      bodySizeLimit: '2mb',
+    }
   }
 }
 
